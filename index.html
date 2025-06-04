@@ -23,7 +23,7 @@
     <header class="bg-linear-to-b from-[#ffffff] to-[#EFEBE3]">
       <!-- Nav starts here -->
       <nav
-        class="max-w-[80%] mx-auto flex justify-between items-center mt-[15px]"
+        class="container mx-auto flex justify-between items-center px-6 mt-[15px]"
       >
         <!-- Small logo -->
         <div class="block md:hidden">
@@ -52,7 +52,7 @@
           </div>
 
           <!-- Icons -->
-          <div class="hidden md:block lg:block space-x-2">
+          <div class="hidden md:block space-x-2">
             <i class="fa-solid fa-magnifying-glass w-[40px]"></i>
             <i class="fa-solid fa-cart-shopping w-[40px]"></i>
 
@@ -77,7 +77,7 @@
       <!-- Nav ends here -->
 
       <!-- banner starts here -->
-      <section class="max-w-[80%] mx-auto pt-28">
+      <section class="pt-28">
         <div class="text-center">
           <h1 class="text-[32px] md:text-[56px] font-semibold leading-auto">
             Freshness
@@ -96,7 +96,7 @@
           </p>
           <div class="flex justify-center">
             <img
-              class="w-[500px] md:w-[800px]"
+              class="w-[500px] sm:w-[800px]"
               src="./assets/hero-img.png"
               alt="banner-image"
             />
@@ -108,15 +108,13 @@
     <!-- Header ends here -->
 
     <!-- main starts here -->
-    <main class="max-w-[80%] mx-auto my-32">
+    <main class="">
       <!-- Services section starts here -->
-      <section>
-        <h1 class="text-[32px] text-green-500 font-semibold leading-auto">
-          Services
-        </h1>
-        <div class="grid grid-cols-3 gap-8">
+      <section class="container mx-auto my-32">
+        <h1 class="text-[32px] text-green-500 font-semibold ml-5">Services</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- service 1st -->
-          <div class="max-w-[424px] bg-[#F9EAC7] rounded-3xl mt-10">
+          <div class="px-10 md:max-w-[424px] bg-[#EFEBE3] rounded-3xl md:mt-10">
             <div class="flex justify-center">
               <img class="pt-5" src="./assets/support.png" alt="" />
             </div>
@@ -130,7 +128,9 @@
             </div>
           </div>
           <!-- service 2nd -->
-          <div class="max-w-[424px] bg-[#F9EAC7] rounded-3xl mt-10">
+          <div
+            class="w-full md:max-w-[424px] bg-[#EFEBE3] rounded-3xl md:mt-10"
+          >
             <div class="flex justify-center">
               <img class="pt-5" src="./assets/fast-delivery.png" alt="" />
             </div>
@@ -144,7 +144,9 @@
             </div>
           </div>
           <!--service 3rd  -->
-          <div class="max-w-[424px] bg-[#F9EAC7] rounded-3xl mt-10">
+          <div
+            class="w-full md:max-w-[424px] bg-[#EFEBE3] rounded-3xl md:mt-10"
+          >
             <div class="flex justify-center">
               <img class="pt-5" src="./assets/healthy-100.png" alt="" />
             </div>
@@ -164,233 +166,439 @@
       <!-- Services section ends here -->
 
       <!-- Popular products section starts here -->
-      <section class="max-w-[80%] mx-auto bg-[#f9eac7ee] w-[1600px] mt-[80px]">
-        <div>
-          <h2 class="pt-60 pl-[140px] pr-[1140px] text-green-500">
+      <section class="w-full my-5 md:my-32">
+        <div
+          class="container mx-auto my-32 bg-[#EFEBE3] pt-[150px] pb-[150px] pl-[70px] pr-[50px]"
+        >
+          <h1
+            class="text-[32px] text-green-500 font-semibold leading-auto ml-5 py-10 tracking-wider"
+          >
             Popular Products
-          </h2>
-        </div>
-        <div class="grid grid-cols-4 gap-8 pt-[247px] pb-[128px] px-[140px]">
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+          </h1>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-[100px]">
+            <!-- 1st -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-onion.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[20px] font-[500]">Onion 1 KG</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 2nd cart -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-tomato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[16px] font-[500]">Tomato 500 g</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 3rd cart -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-potato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[20px] font-[500]">Potato 1 KG</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 4rth -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-tomato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[16px] font-[500]">Tomato 500 g</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 5th -->
+
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-onion.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[20px] font-[500]">Onion 1 KG</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 6th -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-tomato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[16px] font-[500]">Tomato 500 g</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 7th  -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-potato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[20px] font-[500]">Potato 1 KG</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 8th -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-tomato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[16px] font-[500]">Tomato 500 g</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 9th -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-onion.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[20px] font-[500]">Onion 1 KG</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 10th -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-tomato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[16px] font-[500]">Tomato 500 g</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!-- 11th -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-potato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[20px] font-[500]">Potato 1 KG</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- First -->
-          <div class="bg-white w-[275px] p-[16px] grid grid-cols-2 rounded-md">
-            <!-- img 1 -->
-            <div class="max-w-[86px] bg-[#f9eac742]">
-              <img class="w-full" src="./assets/product-onion.png" alt="" />
-            </div>
-            <!-- 01 product -->
-            <div>
-              <div>
-                <div class="flex gap-3">
-                  <img src="./assets/star.png" alt="" />
-                  <p class="text-[16px] font-regular">4.5</p>
+            <!--12th  -->
+            <div
+              class="w-full md:w-[275px] min-h-[115px] bg-[#FFFFFF] border-1 border-[#1111111A] pt-[16px] pc-[16px] pl-[16px] rounded-xl"
+            >
+              <div class="flex gap-[20px]">
+                <div class="image-onion rounded-xl">
+                  <img
+                    class="bg-[#EFEBE3] py-[8px] pl-[8px] pr-[7.68px]"
+                    src="./assets/product-tomato.png"
+                    alt=""
+                  />
                 </div>
-                <h3 class="text-[20px] font-medium">Onion 1 KG</h3>
-                <p class="text-[20px] font-medium">$39.99</p>
+                <div class="pr-[38px]">
+                  <div class="star-rating flex gap-4">
+                    <img src="./assets/star.png" alt="star-rating" />
+                    <p class="text-[16px] font-[400]">4.5</p>
+                  </div>
+                  <div class="onion-price">
+                    <h2 class="text-[16px] font-[500]">Tomato 500 g</h2>
+                    <p class="text-[16px] font-[500]">$39.99</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- Popular products section endss here -->
+
+      <!-- Products section starts here -->
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between gap-3"
+      >
+        <div class="w-full md:w-[980px] bg-[#115414] rounded-3xl">
+          <div class="flex items-center justify-center sm:justify-around">
+            <div class="space-y-7">
+              <img src="./assets/dawat-logo.png" alt="" />
+              <button
+                class="shadow-[#63b76d50] text-[23.27px] font-regular text-white bg-[#63b76d] shadow-2xl leading-auto px-[33.24px] py-[15px] rounded-[8px]"
+              >
+                Cook Exotic Dishes
+              </button>
+              <p class="text-[25px] sm:text-[40px] text-white">
+                UP to <span class="font-bold">20% OFF</span>
+              </p>
+            </div>
+            <div class="dawat-rice-image mt-10">
+              <img src="./assets/product-dawat.png" alt="" class="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#102861] w-full md:w-[520px] rounded-3xl">
+          <div
+            class="flex items-center justify-center md:justify-between gap-3"
+          >
+            <div class="h-fit ml-3 space-y-5">
+              <img src="./assets/indiagate-logo.png" alt="" />
+              <button
+                class="text-[23.27px] font-regular text-white bg-[#2a4d97] shadow-2xl leading-auto px-[25px] py-[10px] rounded-[8px]"
+              >
+                Cook Exotic Dishes
+              </button>
+              <p class="text-[25px] md:text-[40px] text-white">
+                UP to <span class="font-bold">40% OFF</span>
+              </p>
+            </div>
+            <div>
+              <img
+                class="mt-16 mr-8"
+                src="./assets/product-indiagate.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Products section ends here -->
     </main>
     <!-- main ends here -->
+
+    <!-- Footer section starts -->
+    <footer class="min-h-[658px] mt-64 relative">
+      <!-- Center section starts here -->
+      <div
+        class="md:w-[1300px] md:min-h-[457px] bg-[#efebe3] absolute bottom-96 left-36 md:left-80 z-99"
+      >
+        <div
+          class="md:w-[80%] mx-auto flex flex-col md:flex-row items-center justify-around"
+        >
+          <div>
+            <img class="md:mt-16" src="./assets/fruit-basket.png" alt="" />
+          </div>
+          <div class="space-y-3 md:space-y-7 text-center">
+            <h2 class="text-4xl font-semibold">Get Grocery News!</h2>
+            <p class="text-xl font-regular">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <input
+              type="email"
+              class="bg-[#FFFFFF] pl-[18px] py-[18px] pr-[175px] rounded-[8px]"
+              placeholder="Enter email...."
+            />
+            <div class="flex justify-center md:flex-end">
+              <button
+                class="text-[20px] text-white font-regular leading-auto px-[40px] py-[7px] bg-green-600 rounded-[8px]"
+              >
+                Register
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Center section ENDS here -->
+
+      <!-- last green section starts -->
+      <div
+        class="bg-[#179800] w-[1320px] md:w-full md:min-h-[658px] py-[300px] relative"
+      >
+        <div
+          class="md:mt-[200px] absolute top-60 md:top-70 right-25 md:left-96"
+        >
+          <div class="flex flex-col md:flex-row md:space-x-96">
+            <div class="left-side">
+              <img src="./assets/logo-white.png" alt="" />
+              <p class="text-[20px] font-regular text-[#ffffff70]">
+                Discover a world of treats, toys, and <br />
+                essentials handpicked for your furry <br />
+                friends
+              </p>
+            </div>
+            <div class="middle">
+              <ul class="space-y-8">
+                <li class="text-[20px] font-regular text-[#ffffff70]">
+                  <a href="#">Product</a>
+                </li>
+                <li class="text-[20px] font-regular text-[#ffffff70]">
+                  <a href="#">Service</a>
+                </li>
+                <li class="text-[20px] font-regular text-[#ffffff70]">
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="right text-white text-[16px] font-semibold md:space-x-8"
+            >
+              <h3>Follow us</h3>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- last green section ends -->
+    </footer>
+    <!-- Footer section ends -->
   </body>
 </html>
